@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+
+    <title>ToDo</title>
+</head>
+<body>
+<header>
+    <p class="header__text">TO DO</p>
+    <script>
+        let currentDate = new Date().toLocaleDateString();
+        document.write(currentDate)
+    </script>
+</header>
+<form >
+    <input type="text" autocapitalize="off" placeholder="Create new TODO..." class="input">
+    <button class="button__add" type="submit">ADD</button>
+</form>
+<div class="container">
+    <ul class="list"></ul>
+</div>
+<footer>
+
+</footer>
+
+</body>
+<script src="main.js"></script>
+</html>
