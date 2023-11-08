@@ -63,6 +63,8 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 list {
@@ -110,6 +112,7 @@ list {
   width: 52px;
   height: 39px;
   padding: 11px;
+  margin-right: 4px;
 }
 
 /*# sourceMappingURL=index.css.map */

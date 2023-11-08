@@ -26,7 +26,6 @@ function addTodo(event) {
         return null
     }
 
-
     const completedButton = document.createElement('button');
     completedButton.appendChild(document.createTextNode("DON"));
     completedButton.classList.add('complete__button');
@@ -45,13 +44,12 @@ function addTodo(event) {
 
 function deleteCheck(e) {
     const item = e.target;
-    if (item.classList[0] === "delete__button") {
-        const todo = item.parentElement;
-        todo.remove()
+    const todo = (item.parentElement).parentElement;
 
+    if (item.classList[0] === "delete__button") {
+        todo.remove()
     }
     if (item.classList[0] === "complete__button") {
-        const todo = item.parentElement;
         todo.classList.toggle("completedItem")
     }
 }
